@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>Age Calculator</h1>
+<select name="" id="nam">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+<select name="" id="month">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+</select>
+<input type="text"id="year">
+<p id="text"></p>
+<button onclick="saad()">Save</button> -->
+<h1 id="text">0</h1>
+<Button onclick="Increment()">Increment</Button>
+<Button onclick="Decrement()">Decrement</Button>
+<Button onclick="Reset()">Reset</Button>
+    <script>
+        // function saad(){
+        //     var text1=document.getElementById("nam").value
+        //     var text2=document.getElementById("month").value
+        //     var text3=document.getElementById("year").value
+        // }
+        // document.getElementById("text").innerText("SASDS")
+
+        var data =0
+        function Increment(){
+            data++
+            document.getElementById("text").innerText=data
+        }
+        function Decrement(){
+            data--
+            document.getElementById("text").innerText=data
+        }
+        function Reset(){
+            data = 0
+            document.getElementById("text").innerText=data
+        }
+    </script>
+</body>
+</html>

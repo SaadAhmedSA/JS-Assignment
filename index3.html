@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Program to find Friday between 2024 to 2050</h1>
+
+    <script>
+        var Friday = 0
+    var array =["sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        for(i = 2024 ;i<2051 ; i++ ){
+       var now = new Date(i,0,1)
+    //    document.write(now)
+       if(array[now.getDay()]=="Friday"){
+        document.write("<br>",array[now.getDay()],"  is in ",[i])
+        Friday++
+       }
+    
+   }
+
+   document.write("<br>","There are",Friday,"  Friday find between 2024 to 2050")
+    </script>
+</body>
+</html>
